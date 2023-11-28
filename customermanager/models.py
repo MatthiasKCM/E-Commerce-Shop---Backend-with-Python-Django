@@ -14,7 +14,7 @@ class Customer(models.Model):
     email = CharField(max_length=10)
 
     def __str__(self):
-        return(f"Kundendaten: <br></br> "
+        return(
             f"Anrede: {self.salutation}<br> "
                f"Vorname: {self.surname}<br> "
                f"Nachname: {self.last_name}<br> "

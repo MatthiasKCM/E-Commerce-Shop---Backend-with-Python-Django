@@ -19,8 +19,6 @@ from django.contrib import admin
 from django.urls import path
 
 urlpatterns = [
-    path('customers', views.show_customer),
-    path('customers/<id>',views.show_customer_details),
-    path('firstcustomer',views.show_first_customer),
-    path('writeCustomer', views.write_customer)
+    path('address/<id>',views.show_address_by_id),
+    path('all_addresses/<id>',views.show_all_addresses_by_id)
 ]
