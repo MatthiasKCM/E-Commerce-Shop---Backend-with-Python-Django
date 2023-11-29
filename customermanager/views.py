@@ -8,8 +8,12 @@ def show_customer(request):
 
 
 def show_customer_details(request,id):
-    customers = get_object_or_404(Customer, pk=id)
-    return HttpResponse(customers)
+    customer = Customer.objects.get(id=id)
+    addresses = customer.address_set.all()
+    for address in addresses:
+        print(f"{address}\n-------------")
+    return HttpResponse(f"Hier sind die Kundendetails mit der ID: {id}")
+
 
 def show_first_customer(request):
     customer = Customer.objects.first()

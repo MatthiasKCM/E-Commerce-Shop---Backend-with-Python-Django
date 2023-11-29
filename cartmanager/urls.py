@@ -1,4 +1,4 @@
-from django.urls import include
+from . import views #Punkt heisst aktuelles Verzeichnis
 """
 URL configuration for shop project.
 
@@ -19,9 +19,6 @@ from django.contrib import admin
 from django.urls import path
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('customer/',include('customermanager.urls')),
-    path('addresses/',include('addressmanager.urls')),
-    path('products/',include('productmanager.urls')),
-    path('carts/',include('cartmanager.urls'))
+    path('cart/<id>', views.show_cart)
+
 ]
