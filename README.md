@@ -1,4 +1,5 @@
 Overview:
+
 SimpleShop is a streamlined backend system for e-commerce applications, developed with a focus on simplicity and efficiency. Utilizing the Django framework and Python, this project lays a solid foundation for managing online shop data, including product catalogs, customer information, and orders. Data storage is handled by SQLite, a lightweight yet powerful database system, making it ideal for development and testing environments.
 
 Learning Outcomes:
